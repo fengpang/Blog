@@ -43,7 +43,8 @@
 - 活动对象变量对象区别？
 - 作用域链是怎么生成的？ 按执行入栈出栈的流程看下面的代码结果应该是 Fn C scope 才对
 
-```var a = 'global scope'
+```
+    var a = 'global scope'
     function b () {
       console.log(a)
     }
