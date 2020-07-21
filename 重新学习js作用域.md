@@ -55,8 +55,8 @@
     c()
 ```
 
-| 执行栈 |    执行环境    |          包含的值          |
-| :----: | :------------: | :------------------------: |
-|        | global context |  a: 'global scope', b, c   |
-|        |   c context    | arguments, a: 'Fn C scope' |
-|        |   b context    |        arguments, b        |
+|     环境栈     |     变量对象      |          包含的值          |
+| :------------: | :---------------: | :------------------------: |
+| global_context | global_context.vo |  a: 'global scope', b, c   |
+|   c_context    |   c_context.ao    | arguments, a: 'Fn C scope' |
+|   b_context    |   b_context.ao    |        arguments, b        |
